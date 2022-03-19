@@ -1,8 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:X-Forwarded-SSL} !on
-RewriteCond %{HTTP_HOST} ^tonicotropical\.online$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.tonicotropical\.online$
-RewriteRule ^(.*)$ "https\:\/\/www\.tonicotropical\.online\/$1" [R=301,L]
-
