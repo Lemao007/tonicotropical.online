@@ -484,7 +484,7 @@ setTimeout(function() {
      if (utmParamQueryString.toString()) {
           var navLinks = document.querySelectorAll('a');
           navLinks.forEach(function(item) {
-               if (item.href.indexOf('https://pay.kiwify.com.br/kA1NrZF') !== -1) {
+               if (item.href.indexOf('pay.kiwify.com.br') !== -1) {
                     if (item.href.indexOf('?') === -1) {
                          item.href += '?' + utmParamQueryString.toString();
                     } else {
